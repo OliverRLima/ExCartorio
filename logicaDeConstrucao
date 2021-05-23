@@ -1,0 +1,11 @@
+ Minha lógica para a construção deste exercício baseia-se em três partes: abstração dos requisitos; execução dos requisitos específicos; Testes.
+ A primeira é referente a leitura e entendimento dos requisitos gerais propostos, onde a partir destes consegui chegar em requisitos
+específicos e, com estes em mãos, pude criar as tarefas que deveria executar para a construção da API REST. Este passos foram documentados
+dentro do diretório 'Organização', onde para fundamentar meus passos coloquei imagens da minha trilha para requisitos específicos e também um design de telas
+para o thymeleaf.
+ A segunda parte é a execução das tarefas geradas. Nesta em específico utilizei a ferramenta Microsoft Planner para me mapear do que tinha que fazer, que estava fazendo,
+o que podia testar e o que já estava feito, no estilo Kanban. Então construi primeiramente uma API REST da forma que comumente construo, ou seja, uma API que fornece
+endpoints que podem ser consumidos através dos métodos HTTP por usuários ou aplicações, devolvendo sempre respostas de acordo com o código HTTP correspondente. No entanto,
+é necessário o consumo da API por um frontend em thymeleaf, o que tentei fazer, mas sem muito sucesso. Logo, neste repositório encontrasse tanto uma como a outra API e meus
+progressos em cada uma delas.
+ Por fim a terceira e última parte foi a execução de testes, que por razão de tempo decidi realizar de forma manual.
