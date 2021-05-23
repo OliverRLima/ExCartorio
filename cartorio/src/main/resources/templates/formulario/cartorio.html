@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<body>
+<div>
+    <div>
+        <h1>Novo Cartorio</h1>
+    </div>
+
+    <form action="/cartorios/cadastrar" th:action="@{/cartorios/cadastrar}" th:object="${cartorio}" method="POST">
+        <div>
+            <label for="nome">Cartorio</label>
+            <input name="nome" placeholder="Nome do cartório"/>
+            <small>Informe qual o nome do cartório.</small>
+        </div>
+        <div>
+            <label for="endereco">Endereco</label>
+            <input name="endereco" placeholder="Endereço do cartório"/>
+            <small>Informe qual o endereço do cartório</small>
+        </div>
+        <div>
+            <label for="certidoes">Certidões</label>
+            <input name="certidoes" placeholder="Nome da certidão"/>
+            <small>Informe ao menos o nome de uma das certidões</small>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+</body>
+</html>

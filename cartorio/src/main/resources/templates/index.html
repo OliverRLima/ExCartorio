@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cartórios</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Cartórios</h1>
+<div th:switch="${cartorios}">
+    <h2 th:case="null">Sem cartórios cadastrados</h2>
+    <div th:case="*">
+        <table>
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Visualizar</th>
+<!--                <th>Deletar</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="cartorio : ${cartorios}">
+                <td th:text="${cartorio.nome}"></td>
+                <td th:text="${cartorio.endereco}"></td>
+                <td><a th:href="@{/cartorios/{id}(id=${cartorio.id})}">Visualizar</a></td>
+<!--                <form th:action="@{/cartorios/deletar/{id}(id=${cartorio.id})} method="DELETE" >-->
+                    <button type="submit">Deletar</button>
+                </form>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <a th:href="@{/cartorios/formulario}">Cadastrar novo Cartório</a>
+</div>
+</body>
+</html>
